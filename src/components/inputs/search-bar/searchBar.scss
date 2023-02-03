@@ -1,0 +1,67 @@
+@mixin inputHover {
+  background-color: var(--color-body);
+  border-color: var(--color-button);
+}
+
+.search-bar {
+  white-space: nowrap;
+  width: 100%;
+
+  height: 40px;
+  padding: 0 16px;
+  margin: 0 16px;
+
+  background-color: var(--color-field);
+  border: 1px solid var(--color-detailWeak);
+  border-radius: 2em;
+
+  &:hover {
+    @include inputHover();
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__label {
+    box-sizing: unset;
+    flex-shrink: 0;
+    padding-right: 8px;
+
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: var(--color-icon);
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.4rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      //color: var(--color-icon);
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.search-bar-active {
+  @include inputHover();
+}

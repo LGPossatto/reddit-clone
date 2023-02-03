@@ -1,0 +1,58 @@
+:root {
+  --color-background: #dae0e6;
+  --color-background-dark: #030303;
+  --color-body: #fff;
+  --color-body-dark: #1a1a1b;
+  --color-field: #f6f7f8;
+  --color-field-dark: #272729;
+  --color-detail: #ccc;
+  --color-detailWeak: #edeff1;
+  --color-detail-dark: #343536;
+  --color-detailWeak-dark: #343536;
+
+  --color-icon: #878a8c;
+  --color-icon-dark: #818384;
+  --color-navIcon: #1a1a1b;
+  --color-navIcon-dark: #d7dadc;
+
+  --color-bodyText: #1c1c1c;
+  --color-bodyText-dark: #d7dadc;
+
+  --color-reddit: #ff4500;
+  --color-button: #0079d3;
+  //#0077cf
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+
+  color: var(--color-bodyText);
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+
+  background-color: var(--color-background);
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
