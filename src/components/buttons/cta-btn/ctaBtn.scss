@@ -1,0 +1,20 @@
+.cta-btn {
+  width: 100%;
+  min-height: 32px;
+  padding: 4px 16px;
+
+  border-radius: 9999px;
+
+  background-color: var(--color-button);
+
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-body);
+}
+
+.cta-btn-inactive {
+  pointer-events: none;
+  user-select: none;
+
+  background-color: var(--color-detail);
+}

@@ -13,9 +13,14 @@ interface props {
 export const TextIconBtn = ({ text, icon }: props) => {
   const [holver, setHolver] = useState(false);
 
+  const handleOnClick = () => {
+    alert("Nothing to see here!");
+  };
+
   return (
     <button
       className="text-icon-btn"
+      onClick={handleOnClick}
       onMouseEnter={() => setHolver(true)}
       onMouseLeave={() => setHolver(false)}
     >
