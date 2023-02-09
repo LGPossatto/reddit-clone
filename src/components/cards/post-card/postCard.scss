@@ -1,0 +1,82 @@
+.post-card {
+  cursor: pointer;
+  position: relative;
+
+  width: 100%;
+  padding-left: 40px;
+  margin-bottom: 10px;
+
+  background-color: var(--color-detailWeak);
+
+  border: 1px solid var(--color-detail);
+  border-radius: 4px;
+
+  &:hover {
+    border-color: var(--color-icon);
+  }
+
+  &__post {
+    padding: 8px 8px 2px;
+
+    background-color: var(--color-body);
+
+    .info {
+      display: block;
+      margin-bottom: 8px;
+
+      font-size: 1.2rem;
+      color: var(--color-icon);
+    }
+
+    > h3 {
+      margin-bottom: 8px;
+
+      font-size: 1.8rem;
+      line-height: 22px;
+    }
+
+    > p {
+      max-height: 250px;
+
+      font-size: 1.4rem;
+      line-height: 21px;
+    }
+
+    .comments {
+      cursor: pointer;
+
+      display: flex;
+
+      width: fit-content;
+      padding: 8px;
+
+      border-radius: 2px;
+
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--color-icon);
+
+      &:hover {
+        background-color: var(--color-detailWeak);
+      }
+
+      > svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+
+        path {
+          fill: var(--color-icon);
+        }
+      }
+    }
+  }
+
+  &__vote {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-top: 8px;
+  }
+}

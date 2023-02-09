@@ -6,6 +6,7 @@ import "./feed.scss";
 import { AvatarBtn } from "../buttons/avatar-btn/AvatarBtn";
 import { TextInput } from "../inputs/text-input/TextInput";
 import { IconBtn } from "../buttons/icon-btn/IconBtn";
+import { PostCard } from "../cards/post-card/PostCard";
 
 export const Feed = () => {
   const [postVal, setPostVal] = useState("");
@@ -29,6 +30,15 @@ export const Feed = () => {
           ></TextInput>
         </form>
         <IconBtn tip="Icon ?" icon={faQuestion}></IconBtn>
+      </section>
+      <section className="feed__posts">
+        <PostCard
+          userName="user123"
+          postTitle="Title title"
+          postDate={new Date()}
+          postComments={328}
+          postBody="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia esse sed quibusdam soluta maxime fugiat vel autem. Voluptatem quam praesentium recusandae pariatur. Nulla obcaecati sed recusandae blanditiis hic pariatur."
+        ></PostCard>
       </section>
     </div>
   );
