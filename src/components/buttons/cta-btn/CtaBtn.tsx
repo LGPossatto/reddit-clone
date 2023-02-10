@@ -3,13 +3,13 @@ import "./ctaBtn.scss";
 interface props {
   text: string;
   handleOnClick: () => void;
-  active?: boolean;
+  disabled?: boolean;
 }
 
-export const CtaBtn = ({ text, handleOnClick, active = true }: props) => {
+export const CtaBtn = ({ text, handleOnClick, disabled = false }: props) => {
   return (
     <button
-      className={`cta-btn ${active ? "" : "cta-btn-inactive"}`}
+      className={`cta-btn ${disabled ? "cta-btn-disabled" : ""}`}
       onClick={handleOnClick}
     >
       {text}

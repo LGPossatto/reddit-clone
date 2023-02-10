@@ -2,7 +2,9 @@
   --color-background: #dae0e6;
   --color-background-dark: #030303;
   --color-body: #fff;
+  --color-body-80: #ffffffcc;
   --color-body-dark: #1a1a1b;
+  --color-body-dark-80: #1a1a1bcc;
   --color-field: #f6f7f8;
   --color-field-dark: #272729;
   --color-detail: #ccc;
@@ -57,7 +59,16 @@ button {
   border: none;
 }
 
-.container {
+.app-container {
   width: 100%;
   padding: 20px 24px;
+}
+
+.main-container {
+  width: 640px;
+}
+
+.side-container {
+  width: 312px;
+  margin-left: 24px;
 }

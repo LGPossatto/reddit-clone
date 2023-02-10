@@ -1,15 +1,15 @@
 import "./homePage.scss";
 import { Feed } from "../../components/feed/Feed";
-import { SideBar } from "../../components/side-bar/SideBar";
+import { HomeSideBar } from "./home-side-bar/HomeSideBar";
 
 export const HomePage = () => {
   return (
     <div className="home-page">
-      <section className="home-page__feed">
+      <section className="main-container">
         <Feed></Feed>
       </section>
-      <section className="home-page__side-bar">
-        <SideBar></SideBar>
+      <section className="side-container">
+        <HomeSideBar></HomeSideBar>
       </section>
     </div>
   );

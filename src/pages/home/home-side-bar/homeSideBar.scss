@@ -1,15 +1,5 @@
-.side-bar {
+.home-side-bar {
   &__info-card {
-    overflow: hidden;
-
-    width: 100%;
-    padding: 12px;
-
-    background-color: var(--color-body);
-
-    border: 1px solid var(--color-detail);
-    border-radius: 4px;
-
     .img-banner {
       width: 100%;
       height: 34px;
@@ -60,7 +50,7 @@
       background-color: var(--color-detailWeak);
     }
 
-    .btn-inactive {
+    .btn-disabled {
       margin-top: 12px;
     }
   }

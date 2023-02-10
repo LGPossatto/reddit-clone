@@ -1,0 +1,61 @@
+.comment-textarea {
+  overflow: hidden;
+
+  width: 100%;
+
+  border: 1px solid var(--color-detail);
+  border-radius: 4px;
+
+  background-color: var(--color-body);
+
+  &:focus-within {
+    border-color: var(--color-textBody);
+  }
+
+  textarea {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    resize: vertical;
+    outline: none;
+
+    width: 100%;
+    min-height: 122px;
+    padding: 8px 16px;
+
+    border: none;
+
+    font-size: 1.4rem;
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    background-color: var(--color-detailWeak);
+
+    button {
+      padding: 4px 20px;
+      margin: 4px 8px;
+
+      background-color: var(--color-button);
+
+      border-radius: 9999px;
+
+      color: var(--color-body);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:disabled {
+        pointer-events: none;
+        background-color: var(--color-detail);
+      }
+    }
+  }
+}
