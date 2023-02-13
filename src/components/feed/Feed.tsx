@@ -24,9 +24,11 @@ export const Feed = () => {
         </div>
         <form className="post-bar" onSubmit={handleSubmit}>
           <TextInput
+            label="search"
             value={postVal}
             setValue={setPostVal}
             placeholder="Create Post"
+            hideLabel
           ></TextInput>
         </form>
         <IconBtn tip="Icon ?" icon={faQuestion}></IconBtn>

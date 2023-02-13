@@ -1,10 +1,19 @@
+import { useState } from "react";
+
 import "./homePage.scss";
 import { Feed } from "../../components/feed/Feed";
 import { HomeSideBar } from "./home-side-bar/HomeSideBar";
+import { Modal } from "../../components/boxes/modal/Modal";
+import { Login } from "../../components/login/Login";
 
 export const HomePage = () => {
+  const [modalActive, setModalActive] = useState(false);
+
   return (
     <div className="home-page">
+      <Modal active={!modalActive} setActive={setModalActive}>
+        <Login></Login>
+      </Modal>
       <section className="main-container">
         <Feed></Feed>
       </section>

@@ -1,0 +1,46 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  &__container {
+    position: relative;
+
+    padding: 60px;
+    border-radius: 12px;
+    background-color: var(--color-body);
+  }
+
+  &__close {
+    cursor: pointer;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    padding: 4px;
+
+    > svg {
+      width: 20px;
+      height: 20px;
+
+      path {
+        fill: var(--color-icon);
+      }
+    }
+  }
+}
+
+.modal-inactive {
+  display: none;
+}

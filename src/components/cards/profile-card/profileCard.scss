@@ -1,0 +1,112 @@
+.profile-card {
+  position: relative;
+
+  &__banner {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+
+    height: 94px;
+    padding: 12px;
+
+    background-color: #33a8ff;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 16px;
+
+    .title-box {
+      position: relative;
+
+      .avatar-box {
+        width: 86px;
+        height: 86px;
+
+        background-color: var(--color-detail);
+
+        border: 3px solid var(--color-body);
+        border-radius: 6px;
+      }
+
+      .config {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        padding: 4px;
+        margin-bottom: 5px;
+
+        > svg {
+          width: 20px;
+          height: 20px;
+
+          path {
+            fill: #33a8ff;
+          }
+        }
+      }
+
+      h5 {
+        margin-top: 4px;
+
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .cake {
+      display: flex;
+      align-items: center;
+
+      color: var(--color-icon);
+      font-size: 14px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+
+        path {
+          fill: var(--color-icon);
+        }
+      }
+    }
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin: 16px 0;
+
+      background-color: var(--color-detailWeak);
+    }
+
+    .status {
+      display: flex;
+
+      .following,
+      .followers {
+        width: 100%;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+
+        > span {
+          color: var(--color-icon);
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
