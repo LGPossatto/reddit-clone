@@ -18,11 +18,11 @@
   &:active {
     opacity: 0.75;
   }
-}
 
-.cta-btn-disabled {
-  pointer-events: none;
-  user-select: none;
+  &:disabled {
+    pointer-events: none;
+    user-select: none;
 
-  background-color: var(--color-detail);
+    background-color: var(--color-detail);
+  }
 }

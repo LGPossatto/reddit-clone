@@ -4,7 +4,7 @@ import "./homePage.scss";
 import { Feed } from "../../components/feed/Feed";
 import { HomeSideBar } from "./home-side-bar/HomeSideBar";
 import { Modal } from "../../components/boxes/modal/Modal";
-import { Login } from "../../components/login/Login";
+import { Signup } from "../../components/signup/Signup";
 
 export const HomePage = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -12,7 +12,7 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <Modal active={!modalActive} setActive={setModalActive}>
-        <Login></Login>
+        <Signup></Signup>
       </Modal>
       <section className="main-container">
         <Feed></Feed>

@@ -8,10 +8,7 @@ interface props {
 
 export const CtaBtn = ({ text, handleOnClick, disabled = false }: props) => {
   return (
-    <button
-      className={`cta-btn ${disabled ? "cta-btn-disabled" : ""}`}
-      onClick={handleOnClick}
-    >
+    <button disabled={disabled} className="cta-btn" onClick={handleOnClick}>
       {text}
     </button>
   );
