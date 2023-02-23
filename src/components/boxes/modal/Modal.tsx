@@ -1,19 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
+import { closeLogin } from "../../../redux/login/loginSlice";
+import { useAppDispatch } from "../../../hooks/reduxHooks";
+
 import "./modal.scss";
 
 interface props {
   active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+  closeModal: () => {};
   children: React.ReactNode;
 }
 
-export const Modal = ({ active, setActive, children }: props) => {
+export const Modal = ({ active, closeModal, children }: props) => {
   return (
     <div className={`modal ${active ? "" : "modal-inactive"}`}>
       <div className="modal__container">
-        <span className="modal__close" onClick={() => setActive(false)}>
+        <span className="modal__close" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>
         </span>
         {children}
