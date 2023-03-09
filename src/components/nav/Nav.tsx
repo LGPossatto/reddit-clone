@@ -4,9 +4,6 @@ import {
   faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { useAppDispatch } from "../../hooks/reduxHooks";
-import { openLogin } from "../../redux/login/loginSlice";
-
 import redditLogo from "../../assets/icons/logo.svg";
 import redditLogoText from "../../assets/icons/logoText.svg";
 
@@ -17,8 +14,6 @@ import { IconBtn } from "../buttons/icon-btn/IconBtn";
 import { TextIconBtn } from "../buttons/text-icon-btn/TextIconBtn";
 
 export const Nav = () => {
-  const dispatch = useAppDispatch();
-
   return (
     <nav className="nav">
       <div className="nav__container">
@@ -40,11 +35,7 @@ export const Nav = () => {
           <IconBtn icon={faQuestion} tip="Icon 6"></IconBtn>
           <TextIconBtn text="Advertise" icon={faBullhorn}></TextIconBtn>
         </div>
-        <div
-          className="placeholder"
-          style={{ marginLeft: "16px" }}
-          onClick={() => dispatch(openLogin())}
-        >
+        <div className="placeholder" style={{ marginLeft: "16px" }}>
           PLACEHOLDER
         </div>
       </div>

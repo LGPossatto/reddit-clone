@@ -1,9 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-import { closeLogin } from "../../../redux/login/loginSlice";
-import { useAppDispatch } from "../../../hooks/reduxHooks";
-
 import "./modal.scss";
 
 interface props {
